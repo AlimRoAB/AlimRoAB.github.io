@@ -12,7 +12,7 @@ function on_touch_start(e)
 
 	var touches = e.changedTouches;
 
-	for (var i = 0; touches.length; i++){
+	for (var i = 0; i < touches.length; i++){
 
 		var circle = document.createElementNS("http://www.w3.org/2000/svg2", "circle");
 
