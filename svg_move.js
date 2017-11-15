@@ -6,7 +6,7 @@ var circle2 = document.getElementById("id_circle2");
 circle.addEventListener("touchmove", on_touch_move);
 circle2.addEventListener("touchmove", on_touch_move);
 var svg = document.getElementById("id_svg");
-var rect_svg = svg.getBoundingClientRect();
+var rect_svg = svg.getBoundingClientRect(); 
 
 function on_touch_move(e)
 {
@@ -15,8 +15,8 @@ function on_touch_move(e)
 
 	for (var i = 0; i < touches.length; i++){
 	var circle = touches[i].target;
-	circle.setAttribute("cx , touches[i].pageX - rect_svg.letf);
-	circle.setAttribute("cy , touches[i].pageX - rect_svg.top);
+	circle.setAttribute("cx" , touches[i].pageX - rect_svg.letf);
+	circle.setAttribute("cy" , touches[i].pageX - rect_svg.top);
 	
 	}
 }
