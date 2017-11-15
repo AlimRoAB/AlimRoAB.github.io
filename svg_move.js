@@ -10,7 +10,7 @@ var rect_svg = svg.getBoundingClientRect();
 
 function on_touch_move(e)
 {
-	e.preferenceDefault();
+	e.preverentDefault();
 	var touches = e.changedTouches;
 
 	for (var i = 0; i < touches.length; i++){
