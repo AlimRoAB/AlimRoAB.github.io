@@ -1,4 +1,4 @@
-document.getElementById("id_business").innerHTML = "Buseiness level version: 2017.11.16.5";
+document.getElementById("id_business").innerHTML = "Buseiness level version: 2017.11.16.6";
 
 addEventListener("deviceorientation", on_device_orientation);
 addEventListener("devicemotion", on_device_motion);
@@ -25,6 +25,11 @@ function on_device_motion(e){
 	document.getElementById("accg_x").innerHTML = "accg_x = " + Math.round(e.accelerationIncludingGravity.x * 100) / 100;
 	document.getElementById("accg_y").innerHTML = "accg_y = " + Math.round(e.accelerationIncludingGravity.y * 100) / 100;
 	document.getElementById("accg_z").innerHTML = "accg_z = " + Math.round(e.accelerationIncludingGravity.z * 100) / 100;
+	
+	
+	document.getElementById("rotrate_x").innerHTML = "rotrate_x = " + Math.round(e.rotationRate .x * 100) / 100;
+	document.getElementById("rotrate_y").innerHTML = "rotrate_y = " + Math.round(e.rotationRate .y * 100) / 100;
+	document.getElementById("rotrate_z").innerHTML = "rotrate_z = " + Math.round(e.rotationRate .z * 100) / 100;
 	
 	
 }
