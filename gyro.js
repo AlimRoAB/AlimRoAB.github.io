@@ -5,9 +5,9 @@ addEventListener("deviceorientation", on_device_orientation);
 
 function on_device_orientation(e){
 
-	document.getElementById("z").innerHTML = e.alpha;
-	document.getElementById("x").innerHTML = e.beta;
-	document.getElementById("y").innerHTML = e.gamma;
+	document.getElementById("z").innerHTML = "z = " + e.alpha;
+	document.getElementById("x").innerHTML = "x = " + e.beta;
+	document.getElementById("y").innerHTML = "y = " + e.gamma;
 
 
 
