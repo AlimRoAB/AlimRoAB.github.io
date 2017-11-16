@@ -27,9 +27,9 @@ function on_device_motion(e){
 	document.getElementById("accg_z").innerHTML = "accg_z = " + Math.round(e.accelerationIncludingGravity.z * 100) / 100;
 	
 	
-	document.getElementById("rotrate_x").innerHTML = "rotrate_x = " + Math.round(e.rotationRate .x * 100) / 100;
-	document.getElementById("rotrate_y").innerHTML = "rotrate_y = " + Math.round(e.rotationRate .y * 100) / 100;
-	document.getElementById("rotrate_z").innerHTML = "rotrate_z = " + Math.round(e.rotationRate .z * 100) / 100;
+	document.getElementById("rotrate_x").innerHTML = "rotrate_x = " + Math.round(e.rotationRate .beta * 100) / 100;
+	document.getElementById("rotrate_y").innerHTML = "rotrate_y = " + Math.round(e.rotationRate .gamma * 100) / 100;
+	document.getElementById("rotrate_z").innerHTML = "rotrate_z = " + Math.round(e.rotationRate .alpha * 100) / 100;
 	
 	
 }
