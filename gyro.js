@@ -1,4 +1,4 @@
-document.getElementById("id_business").innerHTML = "Buseiness level version: 2017.11.16.6";
+document.getElementById("id_business").innerHTML = "Buseiness level version: 2017.11.16.7";
 
 addEventListener("deviceorientation", on_device_orientation);
 addEventListener("devicemotion", on_device_motion);
