@@ -15,7 +15,7 @@ function on_device_orientation(e){
 
 								 }
 	//-------------------------------
-function on_device_orientation(e){
+function on_device_motion(e){
 	
 	document.getElementById("acc_x").innerHTML = "acc_x" + e.acceleration.x;
 	document.getElementById("acc_y").innerHTML = "acc_y" + e.acceleration.y;
