@@ -42,13 +42,13 @@ and open the template in the editor.
      <div class="clear"></div>
      <input type="range" id="kaydir" min="0" max="5"/><input type="text" disabled="disabled"/>
      <input type="submit" value="Sansini Dene" id="dene"/><br/>
-     <span id="skor"></span>
+     <span id="score"></span>
     
     
     
 <script>
      var bilg=document.getElementById("bilTah"),ben=document.getElementById("benTah"),
-            kaydir=document.getElementById("kaydir"),skor=5,bilgTah,
+            kaydir=document.getElementById("kaydir"),score=5,bilgTah,
             benTah,buton=document.getElementById("dene");
    
    
@@ -98,15 +98,15 @@ and open the template in the editor.
        break;  
    }  
       if(bilgTah==Number(benTah)) {
-          skor++;
-          document.getElementById("skor").innerHTML="Skorunuz: "+skor;
-          alert("Tebrikler Skorunuz: "+skor);
+          score++;
+          document.getElementById("score").innerHTML="Your score: "+score;
+          alert("Congratulations your score: "+score);
           
       }else{
-          skor--;
-          document.getElementById("skor").innerHTML="Skorunuz: "+skor;
-          if(skor<1){buton.disabled=true;
-          alert("Üzgünüm hiç jetonunuz kalmadi\n Oynamak için jeton yükleyin.");
+          score--;
+          document.getElementById("score").innerHTML="Your score: "+score;
+          if(score<1){buton.disabled=true;
+          alert("Sorry you dont have more coins\n if you wanna play again reflesh page.");
             }
           
       }
